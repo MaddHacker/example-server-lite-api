@@ -113,6 +113,10 @@ function onReq(request, response) {
             statusCode = didDelete ? 200 : 400;
             finishRequest(response, resBody, statusCode);
             break;
+        case 'HEAD':
+            response.statusCode = 200;
+            response.end();
+            break;
         default:
             o.e('Unknown request type: ' + request.method);
             resBody.error = "Unknown request type: '" + request.method + "'!";
