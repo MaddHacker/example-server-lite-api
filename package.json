@@ -1,6 +1,6 @@
 {
     "name": "example-server-lite-api",
-    "version": "1.0.0",
+    "version": "1.2.0",
     "description": "Example usage of server-lite npm to build a simple API.",
     "main": "index.js",
     "scripts": {
